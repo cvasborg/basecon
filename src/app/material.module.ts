@@ -4,8 +4,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
-const MaterialComponent = [
+const MaterialComponents = [
   MatButtonModule,
 ];
 
@@ -16,14 +17,16 @@ const MaterialComponent = [
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MaterialComponent,
+    MaterialComponents,
+    MatCardModule,
   ],
   exports: [
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MaterialComponent,
+    MaterialComponents,
+    MatCardModule,
   ]
 })
 export class MaterialModule {}
