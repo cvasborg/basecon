@@ -1,23 +1,88 @@
-<div style="text-align:center">
+<div style="justify-content: center">
     <h1>Boletins</h1>
     <p>
       This is a platform for technical writers to manage their blog post contents related to angular.
       <br> Click on Login to get Started!!!
       <br>
-      <mat-icon color="primary">book</mat-icon>
       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <mat-button-toggle-group #group="matButtonToggleGroup">
+          <mat-button-toggle value="left" aria-label="Text align left">
+            <mat-icon>format_align_left</mat-icon>
+          </mat-button-toggle>
+          <mat-button-toggle value="center" aria-label="Text align center">
+            <mat-icon>format_align_center</mat-icon>
+          </mat-button-toggle>
+          <mat-button-toggle value="right" aria-label="Text align right">
+            <mat-icon>format_align_right</mat-icon>
+          </mat-button-toggle>
+          <mat-button-toggle value="justify" disabled aria-label="Text align justify">
+            <mat-icon>format_align_justify</mat-icon>
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+        <div class="example-selected-value">Selected value: {{group.value}}</div>
 
+
+
+
+
+      <!--<mat-icon color="primary">book</mat-icon>-->
+
+      <br>
+      <mat-card class="boletim-card">
+          <mat-card-header>
+            <mat-card-title>ABEND AD2L</mat-card-title>
+            <mat-card-subtitle>Falta de definição DB2ENTRY</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content class="boletim-card" style="text-align:center">
+              <p>
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+              </p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-button>Abrir</button>
+          </mat-card-actions>
+      </mat-card>
+<br>
+        <mat-card class="boletim-card">
+            <mat-card-header>
+              <mat-card-title>CICS</mat-card-title>
+              <mat-card-subtitle>CALL x LINK</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="boletim-card" style="text-align:center">
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                  </p>
+            </mat-card-content>
+            <mat-card-actions align="end">
+                <button mat-button>Abrir</button>
+            </mat-card-actions>
+          </mat-card>
+          <br>
+          <mat-card class="boletim-card">
+              <mat-card-header>
+                <div mat-card-avatar class="card-image"></div>
+                <mat-card-title>ABEND</mat-card-title>
+                <mat-card-subtitle>Procedimentos para qualidade na compilacao de programas</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content class="boletim-card" style="text-align:center">
+                  <p>
+                      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                      bred for hunting.
+                    </p>
+              </mat-card-content>
+              <mat-card-actions align="end">
+                  <button mat-button>Abrir</button>
+              </mat-card-actions>
+            </mat-card>
       
     </p>
   </div>
-  <mat-card>
-    <mat-card-title>
-      Mainframe
-    </mat-card-title>
-    <mat-card-content>
-      Conteúdo...
-    </mat-card-content>
-    <mat-card-actions align="end">
-      <button mat-flat-button>Abrir</button>
-    </mat-card-actions>
-  </mat-card>
