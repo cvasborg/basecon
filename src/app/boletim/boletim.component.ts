@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./boletim.component.scss']
 })
 export class BoletimComponent implements OnInit {
-
+  logChange(index) {
+    console.log(index)
+  }
   constructor() { }
 
   ngOnInit(): void {
